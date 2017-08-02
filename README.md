@@ -1,4 +1,3 @@
 # Wendell1.0
 
-
-This is an example app
+This is the master branch for all code
