@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css" type="text/css">
+<title>Set Preferences</title>
+<script type = "text/javascript" src = "Javascript.js"></script>
+</head>
+<body>
+	<div id="container">
+		<header>
+			<h1> <!--<span class="blue-text">Blue</span>--> Your Preferences</h1>
+			<!--<h2>Sign Up Now <span class="white-text">NOW</span></h2>-->
+		</header>
+    
+	<section>
+			<form>
+
+		<fieldset>
+		<legend>What's Important to You?</legend>
+
+				<p>
+
+				<script type="text/javascript"> function updateTextInput(val,int) { document.getElementById('textInput').value=val;}
+				</script>
+
+				<label for="Environmental Impact">Environmental Impact:</label>
+
+				<input id ="Environmental Impact" type="range" name="Environmental Impact" min="0" max="100" onchange="updateTextInput(this.value)">
+				<input id="textInput" type="text">
+			
+				</p>
+
+				<p>
+
+				<script type="text/javascript"> function updateTextInput2(val) { document.getElementById('textInput2').value=val;}
+				</script>
+
+				<label for="Health">Health: </label>
+
+				<input id ="Health" type="range" name="Health" min="0" max="100" onchange="updateTextInput2(this.value)">
+				<input id="textInput2" type="text">
+
+				</p>
+
+				<p>
+				<script type="text/javascript"> function updateTextInput3(val) { document.getElementById('textInput3').value=val;}
+				</script>
+
+				<label for="Cost">Cost: </label>
+
+				<input id ="Cost" type="range" name="Cost" min="0" max="100" onchange="updateTextInput3(this.value)">
+				<input id="textInput3" type="text">
+
+				</p>
+
+
+
+				<p>
+					<label for="call">Dietary Requirements: (Check all that apply) </label>
+					<table>
+						<tr>
+							<td><input type="checkbox" name="dietary" value="vegetarian">Vegetarian</td>
+							<td><input type="checkbox" name="dietary" value="vegan">Vegan</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="dietary" value="gluten">Gluten Free</td>
+							<td><input type="checkbox" name="dietary" value="lactose">Lactose Free</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="dietary" value="halal">Halal</td>
+							<td><input type="checkbox" name="dietary" value="kosher">Kosher</td>
+						</tr>
+					</table>
+				</p>
+				
+				</fieldset>
+
+				<p>
+                                        <input type="button" onclick="parameter()" value="Submit">
+				</p>
+			</form>
+
+				<p>
+				<a href="menu.html">Get Started</a>
+				</p>
+    <section><!--content end-->
+	
+</div><!--container end-->
+</body>
+</html>
